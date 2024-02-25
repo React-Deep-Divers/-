@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Example2 from "../components/useState/example2";
 import Example1 from "../components/useState/example1";
 
 const UseStatePage = () => {
-	const [state, setState] = setState(0);
+	const [state, setState] = useState(0);
 
 	useEffect(() => {
 		console.log("useEffect 안 setState 전", state);
