@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
-import "./App.css";
-import Example1 from "./Compare/example1";
-import Example2 from "./Compare/example2";
+import { useEffect } from "react";
+import Example2 from "../components/useState/example2";
+import Example1 from "../components/useState/example1";
 
-function App() {
-	const [state, setState] = useState(0);
+const UseStatePage = () => {
+	const [state, setState] = setState(0);
 
 	useEffect(() => {
 		console.log("useEffect 안 setState 전", state);
@@ -27,6 +26,6 @@ function App() {
 			<Example2 />
 		</>
 	);
-}
+};
 
-export default App;
+export default UseStatePage;
