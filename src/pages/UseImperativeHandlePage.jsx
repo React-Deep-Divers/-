@@ -1,5 +1,11 @@
+import UseImperativeHandleMain from "../components/useImperativeHandle/UseImperativeHandleMain";
+
 const UseImperativeHandlePage = () => {
-	return <div>hey</div>;
+	return (
+		<>
+			<UseImperativeHandleMain />
+		</>
+	);
 };
 
 export default UseImperativeHandlePage;
