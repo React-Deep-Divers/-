@@ -17,6 +17,7 @@ const HomePage = () => {
 			<button onClick={() => navigate("useImperativeHandle")}>
 				useImperativeHandle
 			</button>
+			<button onClick={() => navigate("/useMemo")}>useMemo</button>
 		</div>
 	);
 };
