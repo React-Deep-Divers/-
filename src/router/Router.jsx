@@ -5,34 +5,36 @@ import HomePage from "../pages/HomePage";
 import UseImperativeHandlePage from "../pages/UseImperativeHandlePage";
 import UseMemoPage from "../pages/UseMemoPage";
 import UseMemoPage2 from "../pages/UseMemoPage2";
+import Callback from "../useCallback/Callback";
 
 const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Layout />,
-		children: [
-			{
-				path: "/",
-				element: <HomePage />,
-			},
-			{
-				path: "/useState",
-				element: <UseStatePage />,
-			},
-			{
-				path: "/useImperativeHandle",
-				element: <UseImperativeHandlePage />,
-			},
-			{
-				path: "/useMemo",
-				element: <UseMemoPage />,
-			},
-			{
-				path: "/useMemo2",
-				element: <UseMemoPage2 />,
-			},
-		],
-	},
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/useState",
+        element: <UseStatePage />,
+      },
+      {
+        path: "/useImperativeHandle",
+        element: <UseImperativeHandlePage />,
+      },
+      {
+        path: "/useMemo",
+        element: <UseMemoPage />,
+      },
+      {
+        path: "/useMemo2",
+        element: <UseMemoPage2 />,
+      },
+      { path: "/useCallback", element: <Callback /> },
+    ],
+  },
 ]);
 
 export default router;
