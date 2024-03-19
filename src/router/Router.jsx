@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage";
 import UseImperativeHandlePage from "../pages/UseImperativeHandlePage";
 import UseMemoPage from "../pages/UseMemoPage";
 import UseMemoPage2 from "../pages/UseMemoPage2";
+import UseDebugPage from "../pages/UseDebugPage";
 
 const router = createBrowserRouter([
 	{
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/useDebugValue",
-				element: <useDebugValuePage />,
+				element: <UseDebugPage />,
 			},
 		],
 	},
