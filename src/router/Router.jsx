@@ -31,6 +31,10 @@ const router = createBrowserRouter([
 				path: "/useMemo2",
 				element: <UseMemoPage2 />,
 			},
+			{
+				path: "/useDebugValue",
+				element: <useDebugValuePage />,
+			},
 		],
 	},
 ]);

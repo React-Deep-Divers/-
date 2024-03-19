@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import { useState, useMemo } from "react";
 const UseMemoPage = () => {
 	const [text, setText] = useState("default");
 
@@ -12,10 +11,15 @@ const UseMemoPage = () => {
 
 	// 렌더링 될 때마다 users.reduce가 실행된다.
 	// users는 변하지 않기 때문에 무의미한 연산이 낭비된다.
-	const count = users.reduce((acc) => {
-		console.log("users 수 세는 중...");
-		return (acc += 1);
-	}, 0);
+	// const count = users.reduce((acc, cur) => {
+	// 	console.log("users 수 세는 중...");
+	// 	return (acc += 1);
+	// }, 0);
+
+	// const count = useMemo(() => {
+	// 	console.log("users 수 세는 중...");
+	// 	return users.reduce((acc, cur) => acc + 1, 0); // Using reduce to count users
+	// }, [users]);
 
 	// useMemo를 사용한 코드
 	// const count = useMemo(countingUsers, users);
