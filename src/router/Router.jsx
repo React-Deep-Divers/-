@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage";
 import UseImperativeHandlePage from "../pages/UseImperativeHandlePage";
 import UseMemoPage from "../pages/UseMemoPage";
 import UseMemoPage2 from "../pages/UseMemoPage2";
+import UseDebugPage from "../pages/UseDebugPage";
 import Callback from "../useCallback/Callback";
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/useMemo2",
         element: <UseMemoPage2 />,
+      },
+      {
+        path: "/useDebugValue",
+        element: <UseDebugPage />,
       },
       { path: "/useCallback", element: <Callback /> },
     ],
